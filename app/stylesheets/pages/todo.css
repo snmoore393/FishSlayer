@@ -1,0 +1,20 @@
+.todo-container {
+  min-height: 100px;
+  width: 650px;
+  min-width: 650px;
+  background-color: tan;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.todo-container .title-row {
+  text-align: center;
+}
+.todo-container .todo {
+  font-size: 24px;
+  padding: 10px 0px 0px 35px;
+  height: 55px;
+}
+.todo-container .close {
+  padding-right: 35px;
+  font-size: 32px;
+}
