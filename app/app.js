@@ -1,10 +1,5 @@
 
 
-
-
-
-
-
 // base framework
 import $ from 'jquery';
 
@@ -17,6 +12,7 @@ import './stylesheets/base.scss';
 import _ from 'underscore';
 import todoController from './pages/todo';
 import d3Example from './pages/d3Example';
+import threeExample from './pages/threeExample';
 
 // on document load
 $(function(){
@@ -37,7 +33,10 @@ $(function(){
     todoController.init();
   }
   else if (window.location.pathname === '/pages/d3Example.html') {
-     d3Example.init();
+    d3Example.init();
+  }
+  if (window.location.pathname === '/pages/threeExample.html') {
+    threeExample.init();
   }
  
 
