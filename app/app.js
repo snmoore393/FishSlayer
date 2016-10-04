@@ -39,6 +39,9 @@ $(function(){
     threeExample.init();
   }
  
+ console.log('Hire me')
+ console.log('Please')
+ console.log('Now')
 
   
 
