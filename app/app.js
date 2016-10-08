@@ -16,7 +16,7 @@ import threeExample from './pages/threeExample';
 
 // on document load
 $(function(){
-
+// kick off the app!
   console.log('%c App Started', 'color:green');
 
 
@@ -27,21 +27,24 @@ $(function(){
     escape:      /{{=([\s\S]+?)}}/g
   };
 
-  // kick off the app!
-  // which page are we on??
-  if (window.location.pathname === '/pages/todo.html') {
+  
+  // My First Router: which page are we on??
+  switch(window.location.pathname){
+  case '/pages/todo.html': 
     todoController.init();
-  }
-  else if (window.location.pathname === '/pages/d3Example.html') {
+    break;
+  case '/pages/d3Example.html': 
     d3Example.init();
-  }
-  if (window.location.pathname === '/pages/threeExample.html') {
+    break;
+  case '/pages/threeExample.html': 
     threeExample.init();
+    break;
   }
+
  
- console.log('Hire me')
- console.log('Please')
- console.log('Now')
+  console.log('Hire me');
+  console.log('Please');
+  console.log('Now');
 
   
 

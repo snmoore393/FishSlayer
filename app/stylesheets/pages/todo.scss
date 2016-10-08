@@ -1,18 +1,26 @@
 .todo-container {
-  min-height: 100px;
   width: 650px;
   min-width: 650px;
   background-color: tan;
   margin: 0 auto;
   margin-top: 10px;
+  .title-row {
+    text-align: center;
+  }
 }
-.todo-container .title-row {
-  text-align: center;
-}
+
 .todo-container .todo {
+  background-color: lightgrey;
   font-size: 24px;
-  padding: 10px 0px 0px 35px;
+  padding: 12px 0px 0px 35px;
   height: 55px;
+  &.completed {
+    background-color: inherit;
+  }
+  &.completed .todo-title{
+    color: lightgrey;
+    text-decoration: line-through;
+  }
 }
 .todo-container .close {
   padding-right: 35px;
