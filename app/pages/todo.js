@@ -76,7 +76,7 @@ var controller = {
     $item.find('.save').on('click', controller.updateTitle);
     $item.find('.todo-title-edit input').on('keypress', controller.updateTitleKeypress);
   },
-  // handler to update title on enter
+   // handler to update title on enter
   updateTitleKeypress: function(event){
     if (event.which === 13) {
       // they hit enter!!
