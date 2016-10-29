@@ -7,8 +7,11 @@ import TodoView from '../views/bb_todoView';
 var Controller = Backbone.View.extend({
   model: new bbTodoModel(),
   initialize: function(){
-    this.model.fetch();
-    this.render();
+    var that = this;
+    this.model.fetch(function(){
+      that.render(); 
+    });
+    
   },
   render: function(){
     var todos = this.model.get('todos');
