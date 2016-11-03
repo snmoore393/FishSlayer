@@ -7,7 +7,10 @@
   </li>
   <li>
     <a href="/pages/bb_todo.html">Backbone Todo App</a>
-  </li> 
+  </li>
+  <li>
+    <a href="/pages/r_todo.html">React Todo App</a>
+  </li>  
   <li>
     <a href="/pages/d3Example.html">d3 Example</a>
   </li>

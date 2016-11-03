@@ -14,6 +14,7 @@ import todoController from './pages/todo';
 import d3Example from './pages/d3Example';
 import threeExample from './pages/threeExample';
 import bbTodoController from './pages/bb_todo';
+import rTodoController from './pages/r_todo';
 
 // on document load
 $(function(){
@@ -30,6 +31,9 @@ $(function(){
     break;
   case '/pages/bb_todo.html': 
     new bbTodoController();
+    break;
+  case '/pages/r_todo.html': 
+    new rTodoController();
     break;
   case '/pages/d3Example.html': 
     d3Example.init();

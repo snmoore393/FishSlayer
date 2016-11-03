@@ -1,28 +1,31 @@
 
 // var $ = window.$;
 import Backbone from 'backbone';
-import bbTodoItemView from '../views/bb_todoItemView';
+import ReactDOM from 'react-dom';
+import React from 'react';
+import TodoItemView from '../views/r_todoItemView';
 
 var TodoView = Backbone.View.extend({
   el: '.todo-container',
   events: {
     'click .btn-add': 'addTodo',
-    'keypress .add-input': 'addKeypress'
+    // 'keypress .add-input': 'addKeypress'
   },
   initialize: function(todos, controller){
     this.controller = controller;
     this.render(todos);
   },
   render: function(todos){
-    // render each todo item
-    var that = this;
-    var renderedTodos = todos.map(function(item, index){
-      item.id = index + 1;
-      var view = new bbTodoItemView(item, that);
-      return view.$el;
+    var controller = this.controller;
+    var todosHtml = todos.map(function(todo, index){
+      todo.id = index + 1;
+      return <TodoItemView key={index} item={todo} controller={controller}/>;
     });
-    // put all todo items into the dom
-    this.$el.find('.todo-list').html(renderedTodos);
+
+    ReactDOM.render(
+        <div>{todosHtml}</div>,
+        this.$el.find('.todo-list')[0]
+    );
   },
   addTodo: function(){
     var newTitle = this.$el.find('.add-input').val();
