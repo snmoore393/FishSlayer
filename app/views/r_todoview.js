@@ -36,15 +36,6 @@ var TodoView = Backbone.View.extend({
     if (event.which === 13) {
       this.addTodo();
     }
-  },
-  removeTodo: function(id){
-    this.controller.removeTodo(id);
-  },
-  editTodo: function(id, newTitle){
-    this.controller.editTodo(id, newTitle);
-  },
-  changeComplete: function(id, newTitle){
-    this.controller.changeComplete(id, newTitle);
   }
 });
 
