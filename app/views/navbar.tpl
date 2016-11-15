@@ -17,4 +17,7 @@
   <li>
     <a href="/pages/threeExample.html">Three Example</a>
   </li>
+  <li>
+    <a href="/pages/nativePaintingHome.html">Native Painting Home</a>
+  </li>
 </ul>

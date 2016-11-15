@@ -15,6 +15,7 @@ import d3Example from './pages/d3Example';
 import threeExample from './pages/threeExample';
 import bbTodoController from './pages/bb_todo';
 import rTodoController from './pages/r_todo';
+import nativePaintingHome from './pages/nativePaintingHome';
 
 // on document load
 $(function(){
@@ -40,6 +41,9 @@ $(function(){
     break;
   case '/pages/threeExample.html': 
     threeExample.init();
+    break;
+  case '/pages/nativePaintingHome.html': 
+    todoController.init();
     break;
   }
 
