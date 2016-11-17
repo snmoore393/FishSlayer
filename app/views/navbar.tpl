@@ -20,4 +20,7 @@
   <li>
     <a href="/pages/nativePaintingHome.html">Native Painting Home</a>
   </li>
+  <li>
+    <a href="/pages/nativePaintingService.html">Native Painting Service</a>
+  </li>
 </ul>

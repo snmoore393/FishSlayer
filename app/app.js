@@ -1,5 +1,4 @@
 
-
 // base framework
 import $ from 'jquery';
 
@@ -16,6 +15,7 @@ import threeExample from './pages/threeExample';
 import bbTodoController from './pages/bb_todo';
 import rTodoController from './pages/r_todo';
 import nativePaintingHome from './pages/nativePaintingHome';
+import nativePaintingService from './pages/nativePaintingService';
 
 // on document load
 $(function(){
@@ -43,7 +43,10 @@ $(function(){
     threeExample.init();
     break;
   case '/pages/nativePaintingHome.html': 
-    todoController.init();
+    nativePaintingHome.init();
+    break;
+  case '/pages/nativePaintingService.html': 
+    nativePaintingService.init();
     break;
   }
 

@@ -1,12 +1,10 @@
-// base.scss
-// 
 
-/*@import 'defaults/base-global.scss'; */
-@import 'defaults/typography.scss'; 
 @import 'lib/bootstrap.min.css';
+@import 'defaults/typography.scss';
 @import 'pages/threeExample.css';
 @import 'pages/todo.scss';
 @import 'pages/nativePaintingHome.scss';
+@import 'pages/nativePaintingService.scss';
 
 /********************************************************** Viewport */
 
