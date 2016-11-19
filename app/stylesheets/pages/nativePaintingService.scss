@@ -1,17 +1,41 @@
 .title {
   text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  padding: 35px;
+
+}
+
+.title-2 {
+  padding: 10px;
+  background-color: white;
+}
+
+.title-1 {
+  color: black;
+  font-weight: 900;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  background-size: cover;
 }
 
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: red;
+    background-color: #C11515;
     color: white;
     width: 200px;
     padding: 5px;
     font-size: 20px;
     border: none;
     cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
     
 }
 
@@ -38,6 +62,8 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-size: 12px;
+    font-family: 'Orbitron', sans-serif;
 }
 
 /* Change color of dropdown links on hover */
@@ -52,10 +78,14 @@
 .dropdown:hover .dropbtn {
     background-color: blue;
 }
-
-// image pop up
+/*
+// image pop up*/
+.row{
+  padding: 0;
+  margin: 0;
+}
 .row > .column {
-  padding: 0 8px;
+  padding: 8px 8px;
 }
 
 .row:after {
@@ -67,6 +97,7 @@
 .column {
   float: left;
   width: 25%;
+
 }
 
 /* The Modal (background) */
@@ -182,15 +213,18 @@ img.hover-shadow {
 //accordian
 /* Style the buttons that are used to open and close the accordion panel */
 button.accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #438E28;
+    color: black;
     cursor: pointer;
-    padding: 18px;
+    padding: 16px;
     width: 100%;
-    text-align: left;
+    text-align: center;
     border: none;
     outline: none;
     transition: 0.4s;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -206,6 +240,10 @@ div.panel {
     overflow: hidden;
     transition: 0.6s ease-in-out;
     opacity: 0;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+
 }
 
 
@@ -213,7 +251,9 @@ div.panel {
 div.panel.show {
     opacity: 1;
     max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+
 }
+
 
 button.accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
@@ -221,6 +261,7 @@ button.accordion:after {
     color: #777;
     float: right;
     margin-left: 5px;
+
 }
 button.accordion.active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
