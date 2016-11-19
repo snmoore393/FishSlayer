@@ -1,0 +1,87 @@
+.about-title {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+}
+
+.about-title-1 {
+    color: black;
+    text-align: center;
+    padding: 35px;
+}
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.para {
+    font-size: 16px;
+    padding: 15px;
+}
+
+.about-img {
+    display: block;
+    margin: auto;
+    background-size: cover;
+    width: 100%;
+}
+
+.about-title-2 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #C11515;
+    color: white;
+    width: 200px;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 1000;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    width: 200px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: blue;
+}

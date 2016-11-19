@@ -16,6 +16,8 @@ import bbTodoController from './pages/bb_todo';
 import rTodoController from './pages/r_todo';
 import nativePaintingHome from './pages/nativePaintingHome';
 import nativePaintingService from './pages/nativePaintingService';
+import nativePaintingAbout from './pages/nativePaintingAbout';
+import nativePaintingContact from './pages/nativePaintingContact';
 
 // on document load
 $(function(){
@@ -47,6 +49,12 @@ $(function(){
     break;
   case '/pages/nativePaintingService.html': 
     nativePaintingService.init();
+    break;
+  case '/pages/nativePaintingAbout.html': 
+    nativePaintingAbout.init();
+    break;
+  case '/pages/nativePaintingContact.html': 
+    nativePaintingContact.init();
     break;
   }
 

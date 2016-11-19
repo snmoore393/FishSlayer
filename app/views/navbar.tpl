@@ -23,4 +23,7 @@
   <li>
     <a href="/pages/nativePaintingService.html">Native Painting Service</a>
   </li>
+  <li>
+    <a href="/pages/nativePaintingAbout.html">Native Painting About Us</a>
+  </li>
 </ul>
